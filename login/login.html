@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ahmed's Portfolio</title>
+    <link
+      href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="text-gray-600 body-font">
+      <div
+        class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center"
+      >
+        <a
+          class="fex title-font font-medium items-center text-gray-900 mb-4 md:mb-0"
+        >
+          <img
+            src="../static/img/logo_remover.png"
+            alt="Ahmed's Logo"
+            width="60"
+            height="50"
+          />
+          <span class="text-xl">Ahmed</span>
+        </a>
+        <nav
+          class="md:mr-auto md:ml-4 md:py-1 md:pl-4 md:border-l md:border-gray-400 flex flex-wrap items-center text-base justify-center"
+        >
+          <a href="#" class="mr-5 hover:text-orange-500 cursor-pointer">Home</a>
+          <a href="#" class="mr-5 hover:text-orange-500 cursor-pointer"
+            >About</a
+          >
+          <a href="#" class="mr-5 hover:text-orange-500 cursor-pointer"
+            >Skills</a
+          >
+          <a href="#" class="mr-5 hover:text-orange-500 cursor-pointer"
+            >Contact Us</a
+          >
+        </nav>
+        <button
+          class="inline-flex items-center bg-gray-100 border-0 py-1 px-3 focus:outline-none hover:bg-gray-200 rounded text-base mt-4 md:mt-0"
+        >
+          <a href="/login.html">Login</a>
+          <svg
+            fill="none"
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            class="w-4 h-4 ml-1"
+            viewBox="0 0 24 24"
+          >
+            <path d="M5 12h14M12 5l7 7-7 7"></path>
+          </svg>
+        </button>
+      </div>
+    </header>
+    <div class="flex justify-center items-center min-h-screen bg-orange-100">
+      <div class="w-full max-w-sm">
+        <form class="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4">
+          <div class="mb-4">
+            <label
+              class="block text-gray-700 text-sm font-bold mb-2"
+              for="username"
+            >
+              Username
+            </label>
+            <input
+              class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+              id="username"
+              type="text"
+              placeholder="Enter your username"
+            />
+          </div>
+          <div class="mb-6">
+            <label
+              class="block text-gray-700 text-sm font-bold mb-2"
+              for="password"
+            >
+              Password
+            </label>
+            <input
+              class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 mb-3 leading-tight focus:outline-none focus:shadow-outline"
+              id="password"
+              type="password"
+              placeholder="********"
+            />
+          </div>
+          <div class="flex items-center justify-between">
+            <button
+              class="bg-orange-500 hover:bg-orange-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+              type="button"
+              id="login-button"
+            >
+              Sign In
+            </button>
+            <div class="flex">
+              <a
+                class="text-blue-500 text-sm cursor-pointer mr-4"
+                id="register-link"
+                >Register</a
+              >
+              <a
+                class="text-blue-500 text-sm cursor-pointer"
+                id="forgot-password-link"
+                >Forgot Password?</a
+              >
+            </div>
+          </div>
+          <p
+            class="text-green-500 text-xs italic mt-3 hidden"
+            id="success-message"
+          >
+            Logged in successfully!
+          </p>
+        </form>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
